@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+.venv/
+venv/
+
+# Do not publish private competition/customer data.
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Local outputs and logs.
+outputs/
+downloads/
+*.log

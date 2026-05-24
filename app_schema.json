@@ -1,0 +1,644 @@
+{
+    "age": {
+        "type": "numeric",
+        "min": 26.0,
+        "max": 73.0,
+        "default": 46.0
+    },
+    "gender": {
+        "type": "categorical",
+        "options": [
+            "Female",
+            "Male"
+        ],
+        "default": "Female"
+    },
+    "marital_status": {
+        "type": "categorical",
+        "options": [
+            "Married",
+            "Single",
+            "Divorced",
+            "Unknown"
+        ],
+        "default": "Married"
+    },
+    "education_level": {
+        "type": "categorical",
+        "options": [
+            "Unknown",
+            "High School",
+            "Graduate",
+            "Uneducated",
+            "College",
+            "Doctorate",
+            "Post-Graduate"
+        ],
+        "default": "Graduate"
+    },
+    "dependent_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 5.0,
+        "default": 2.0
+    },
+    "occupation_type": {
+        "type": "categorical",
+        "options": [
+            "Salaried",
+            "Homemaker",
+            "Retired",
+            "Student",
+            "Business Owner",
+            "Self-Employed"
+        ],
+        "default": "Salaried"
+    },
+    "annual_income": {
+        "type": "numeric",
+        "min": 18000.0,
+        "max": 241318.0,
+        "default": 51592.0
+    },
+    "income_band": {
+        "type": "categorical",
+        "options": [
+            "Low",
+            "Middle",
+            "Upper-Middle",
+            "High",
+            "Lower-Middle"
+        ],
+        "default": "Middle"
+    },
+    "income_category": {
+        "type": "categorical",
+        "options": [
+            "Less than $40K",
+            "$60K - $80K",
+            "$80K - $120K",
+            "$120K +",
+            "$40K - $60K",
+            "Unknown"
+        ],
+        "default": "Less than $40K"
+    },
+    "city_tier": {
+        "type": "categorical",
+        "options": [
+            "Tier 2",
+            "Tier 3",
+            "Tier 1"
+        ],
+        "default": "Tier 2"
+    },
+    "region": {
+        "type": "categorical",
+        "options": [
+            "North",
+            "West",
+            "South",
+            "Central",
+            "East"
+        ],
+        "default": "South"
+    },
+    "customer_segment": {
+        "type": "categorical",
+        "options": [
+            "Affluent",
+            "Mass",
+            "HNI"
+        ],
+        "default": "Affluent"
+    },
+    "tenure_months": {
+        "type": "numeric",
+        "min": 13.0,
+        "max": 56.0,
+        "default": 36.0
+    },
+    "onboarding_channel": {
+        "type": "categorical",
+        "options": [
+            "Branch",
+            "Online",
+            "DSA",
+            "Referral",
+            "Mobile App"
+        ],
+        "default": "Branch"
+    },
+    "relationship_type": {
+        "type": "categorical",
+        "options": [
+            "Multi-Product",
+            "Savings Only",
+            "Investment",
+            "Premium",
+            "Lending"
+        ],
+        "default": "Multi-Product"
+    },
+    "number_of_products": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 6.0,
+        "default": 4.0
+    },
+    "primary_account_type": {
+        "type": "categorical",
+        "options": [
+            "Savings",
+            "Salary",
+            "Current",
+            "NRE/NRO"
+        ],
+        "default": "Savings"
+    },
+    "card_category": {
+        "type": "categorical",
+        "options": [
+            "Blue",
+            "Silver",
+            "Gold",
+            "Platinum"
+        ],
+        "default": "Blue"
+    },
+    "customer_lifetime_value": {
+        "type": "numeric",
+        "min": 733.48,
+        "max": 88861.82,
+        "default": 11166.44
+    },
+    "loyalty_program_member": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "referral_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 7.0,
+        "default": 1.0
+    },
+    "last_contacted_days": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 365.0,
+        "default": 27.0
+    },
+    "relationship_manager_assigned": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "avg_monthly_balance": {
+        "type": "numeric",
+        "min": 1000.0,
+        "max": 163187.0,
+        "default": 11603.0
+    },
+    "current_balance": {
+        "type": "numeric",
+        "min": 728.0,
+        "max": 203151.0,
+        "default": 12027.0
+    },
+    "balance_decline_percentage": {
+        "type": "numeric",
+        "min": -15.0,
+        "max": 30.0,
+        "default": 2.02
+    },
+    "monthly_transaction_count": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 11.0,
+        "default": 5.0
+    },
+    "monthly_transaction_value": {
+        "type": "numeric",
+        "min": 44.17,
+        "max": 1499.58,
+        "default": 324.5
+    },
+    "cash_withdrawal_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 19.0,
+        "default": 5.0
+    },
+    "upi_transaction_count": {
+        "type": "numeric",
+        "min": 3.0,
+        "max": 37.0,
+        "default": 15.0
+    },
+    "debit_card_transaction_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 22.0,
+        "default": 9.0
+    },
+    "net_banking_transaction_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 18.0,
+        "default": 7.0
+    },
+    "account_inactive_days": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 209.0,
+        "default": 85.0
+    },
+    "total_trans_amt": {
+        "type": "numeric",
+        "min": 530.0,
+        "max": 17995.0,
+        "default": 3894.0
+    },
+    "total_trans_count": {
+        "type": "numeric",
+        "min": 10.0,
+        "max": 139.0,
+        "default": 67.0
+    },
+    "total_amt_chng_q4_q1": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 3.397,
+        "default": 0.735
+    },
+    "total_ct_chng_q4_q1": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 3.714,
+        "default": 0.702
+    },
+    "avg_open_to_buy": {
+        "type": "numeric",
+        "min": 10.0,
+        "max": 34516.0,
+        "default": 3454.0
+    },
+    "total_revolving_bal": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 2517.0,
+        "default": 1289.0
+    },
+    "savings_account_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "current_account_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "credit_card_flag": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "personal_loan_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "home_loan_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "auto_loan_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "fixed_deposit_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "investment_product_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "insurance_product_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "demat_account_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "credit_card_limit": {
+        "type": "numeric",
+        "min": 1438.0,
+        "max": 34516.0,
+        "default": 4532.0
+    },
+    "credit_card_spend": {
+        "type": "numeric",
+        "min": 500.0,
+        "max": 12968.0,
+        "default": 1909.0
+    },
+    "credit_utilization_ratio": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 0.995,
+        "default": 0.177
+    },
+    "minimum_due_paid_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "late_credit_card_payment_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 9.0,
+        "default": 1.0
+    },
+    "loan_outstanding_amount": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 972269.0,
+        "default": 27878.0
+    },
+    "emi_amount": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 41363.0,
+        "default": 898.0
+    },
+    "emi_payment_delay_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 8.0,
+        "default": 0.0
+    },
+    "loan_default_risk_score": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 100.0,
+        "default": 36.6
+    },
+    "prepayment_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "mobile_app_login_count": {
+        "type": "numeric",
+        "min": 2.0,
+        "max": 37.0,
+        "default": 19.0
+    },
+    "website_login_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 23.0,
+        "default": 9.0
+    },
+    "digital_transaction_ratio": {
+        "type": "numeric",
+        "min": 0.548,
+        "max": 1.0,
+        "default": 0.853
+    },
+    "last_login_days": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 180.0,
+        "default": 15.0
+    },
+    "failed_login_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 7.0,
+        "default": 1.0
+    },
+    "app_rating_given": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 5.0,
+        "default": 3.9
+    },
+    "paperless_statement_enabled": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "digital_service_usage_score": {
+        "type": "numeric",
+        "min": 35.5,
+        "max": 79.6,
+        "default": 58.5
+    },
+    "mobile_banking_active_flag": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 1.0
+    },
+    "email_open_rate": {
+        "type": "numeric",
+        "min": 0.005,
+        "max": 0.97,
+        "default": 0.465
+    },
+    "total_complaints": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 8.0,
+        "default": 1.0
+    },
+    "complaint_resolution_time": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 60.0,
+        "default": 2.0
+    },
+    "unresolved_complaint_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 4.0,
+        "default": 0.0
+    },
+    "branch_visit_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 11.0,
+        "default": 3.0
+    },
+    "call_center_interaction_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 6.0,
+        "default": 2.0
+    },
+    "relationship_manager_interaction_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 14.0,
+        "default": 1.0
+    },
+    "service_request_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 13.0,
+        "default": 2.0
+    },
+    "escalation_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 2.0,
+        "default": 0.0
+    },
+    "satisfaction_score": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 5.0,
+        "default": 3.7
+    },
+    "nps_score": {
+        "type": "numeric",
+        "min": -95.0,
+        "max": 100.0,
+        "default": 34.0
+    },
+    "campaign_received_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 13.0,
+        "default": 4.0
+    },
+    "campaign_response_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 3.0,
+        "default": 0.0
+    },
+    "cross_sell_offer_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 9.0,
+        "default": 2.0
+    },
+    "upsell_offer_count": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 8.0,
+        "default": 1.0
+    },
+    "retention_offer_received": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "retention_offer_accepted": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "last_campaign_response_days": {
+        "type": "numeric",
+        "min": 1.0,
+        "max": 365.0,
+        "default": 34.0
+    },
+    "discount_or_fee_waiver_received": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+    },
+    "competitor_bank_offer_awareness": {
+        "type": "categorical",
+        "options": [
+            "Not Aware",
+            "High",
+            "Low",
+            "Medium"
+        ],
+        "default": "Low"
+    },
+    "customer_feedback_sentiment": {
+        "type": "categorical",
+        "options": [
+            "Positive",
+            "Neutral",
+            "Negative"
+        ],
+        "default": "Positive"
+    },
+    "monthly_income_estimate": {
+        "type": "numeric",
+        "min": 1000.0,
+        "max": 31267.0,
+        "default": 4360.0
+    },
+    "credit_utilization_3m_avg": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 0.961,
+        "default": 0.169
+    },
+    "credit_utilization_6m_avg": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 0.935,
+        "default": 0.218
+    },
+    "avg_quarterly_balance": {
+        "type": "numeric",
+        "min": 2781.0,
+        "max": 501402.0,
+        "default": 34888.0
+    },
+    "total_digital_logins": {
+        "type": "numeric",
+        "min": 6.0,
+        "max": 50.0,
+        "default": 28.0
+    },
+    "debt_to_income_ratio": {
+        "type": "numeric",
+        "min": 0.0,
+        "max": 5.0,
+        "default": 0.1633
+    },
+    "digital_engagement_index": {
+        "type": "numeric",
+        "min": 26.3,
+        "max": 75.1,
+        "default": 53.6
+    }
+}
