@@ -20,7 +20,7 @@ streamlit run app.py
 
 
 
-Keep these model artifacts in the repo:
+Keep these model artifacts in the folder:
 
 - `preprocessor.pkl`
 - `xgboost_churn_model.json`
