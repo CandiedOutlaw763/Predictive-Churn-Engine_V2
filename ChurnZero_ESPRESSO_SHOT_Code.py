@@ -8,9 +8,9 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 import joblib
 
 def engineer_features(df):
-    """Safely calculates interaction metrics regardless of dataset state."""
+    
     df_eng = df.copy()
-    epsilon = 1e-5 # Prevents DivisionByZero errors
+    epsilon = 1e-5 
     cols = df_eng.columns
     
     if 'monthly_transaction_count' in cols and 'tenure_months' in cols:
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     test_df = pd.read_csv('ChurnZero_test_v1.csv')
     
     print("2. Detecting target column dynamically...")
-    # The true target column is the only column present in train_df but missing in test_df
+   
     target_candidates = [col for col in train_df.columns if col not in test_df.columns]
     target_col = target_candidates[0] if target_candidates else 'churn_prediction'
     print(f"   -> Target column identified as: '{target_col}'")
@@ -48,11 +48,11 @@ if __name__ == "__main__":
     y_train_full = train_df[target_col]
     X_test_final = test_df.drop(columns=['customer_id'], errors='ignore')
     
-    # Programmatic column sorting - No more manual lists or KeyError exceptions
+   
     numeric_features = X_train_full.select_dtypes(include=['int64', 'float64']).columns.tolist()
     categorical_features = X_train_full.select_dtypes(include=['object', 'category']).columns.tolist()
     
-    # Isolate ordinal candidates (e.g., education_level, city_tier) vs standard nominal strings
+   
     ordinal_keywords = ['education', 'tier', 'level']
     categorical_ordinal = [col for col in categorical_features if any(kw in col.lower() for kw in ordinal_keywords)]
     categorical_nominal = [col for col in categorical_features if col not in categorical_ordinal]
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     best_threshold = 0.5
     min_cost = float('inf')
 
-    # Calculates mathematically: $Cost = (FN \times 40000) + (FP \times 500)$
+    
     for thresh in thresholds:
         y_pred = (train_probs >= thresh).astype(int)
         fn = np.sum((y_train_full == 1) & (y_pred == 0))
@@ -128,12 +128,12 @@ if __name__ == "__main__":
         'churn_probability': test_probs
     })
     
-    # Enforce strict hackathon parameters before saving
+  
     assert len(submission) == 2026, f"Fatal: Output has {len(submission)} rows instead of 2026."
     assert submission.isnull().sum().sum() == 0, "Fatal: Null values detected in output arrays."
     
-    # Final output generation
-    team_name = "TeamName"
+    
+    team_name = "ESPRESSO_SHOT"
     file_name = f'ChurnZero_{team_name}_Predictions.csv'
     submission.to_csv(file_name, index=False)
     print(f"Success! Data compiled and safely written to {file_name}")
